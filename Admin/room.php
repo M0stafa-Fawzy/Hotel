@@ -136,20 +136,16 @@ if(!isset($_SESSION["user"]))
 							 {
 										$room = $_POST['troom'];
 										$bed = $_POST['bed'];
-                                        //$place = 'Free';
-                                        var_dump($room) 
-                                
+										//$place = 'Free';
 										
 							
 
-                            require_once '../roomclass.php'
+                            require_once '../roomclass.php';
                             $ad=new room($room , $bed);
                             $ad->add_room($room,$bed);
-                            header("Location: room.php");
+                         //   header("Location: room.php");
                         
-							 }else{
-                                 echo 'itekjfdgmfn cj4fdm'
-                             }
+							 }
 							
 							
 							?>
